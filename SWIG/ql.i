@@ -201,6 +201,7 @@
 %include exercise.i
 %include fittedbondcurve.i
 %include forwardcurve.i
+%include forwardratecurve.i
 %include fra.i
 %include functions.i
 %include gaussian1dmodel.i
@@ -233,6 +234,7 @@
 %include stochasticprocess.i
 %include swap.i
 %include swaption.i
+%include tenorbasis.i
 %include termstructures.i
 %include timebasket.i
 %include timeseries.i
