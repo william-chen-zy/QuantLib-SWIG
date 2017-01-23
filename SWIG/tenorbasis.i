@@ -33,6 +33,9 @@ class TenorBasis {
     Spread value(Date d) const;
     Spread value(Time t) const;
 
+    Spread instBasisValue(Date d) const;
+    Spread instBasisValue(Time t) const;
+
     Rate tenorForwardRate(Date d) const;
     Rate tenorForwardRate(Time t) const;
 
