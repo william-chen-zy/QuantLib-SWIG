@@ -1,0 +1,8 @@
+#!/bin/bash
+
+./autogen.sh \
+&& ./configure CXXFLAGS='-O1' \
+&& make -C Ruby \
+&& make -C Ruby install \
+&& for i in Ruby/examples/*.rb ; do echo $i && ruby $i || break -1 ; done
+
