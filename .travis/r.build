@@ -3,4 +3,7 @@
 ./autogen.sh \
 && ./configure CXXFLAGS='-O1' \
 && make -C R \
-&& make -C R check
+&& make -C R check \
+&& make -C R install \
+&& for i in R/demo/*.R ; do echo $i && Rscript $i || break -1 ; done
+
